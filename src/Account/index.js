@@ -43,7 +43,8 @@ class Account extends Component {
   // set a local variable to the new balance based off of the original balance + amount
   const newBalance = this.state.balance - amount;
   if(newBalance<0){
-    console.log('no funds');
+    alert("not enough funds")
+  
     return
   }
   // set the balance to the newBalance using the setState method (necessary)
